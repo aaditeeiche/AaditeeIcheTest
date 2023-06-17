@@ -1,0 +1,131 @@
+DIGINIQUE TEST - THEORY ANSWERS
+Name: Aaditee Iche
+Email: aaditee.iche@gmail.com
+
+
+QUESTION 1) Mention the working of Internet Website in Terms of Front-end & Back-end Divisions
+ANSWER: Internet websites function through a division of labor between the front-end and back-end components.
+
+Front-end: The front-end is the part of the website that users directly interact with. It focuses on the visual presentation and user experience, making sure the website looks good and is easy to use.
+
+User Interface (UI): The UI consists of the visual elements and layout of the website, such as menus, buttons, and forms. Its purpose is to create an intuitive and user-friendly interface that enables effective interaction.
+
+HTML/CSS: HTML is a markup language that structures the content of the website, defining the hierarchy and arrangement of elements. CSS is a style sheet language that adds styles and formatting to HTML elements, enhancing their visual appearance.
+
+JavaScript: JavaScript is a programming language that enables interactivity and dynamic behavior on the website. It allows for tasks like form validation, creating animations, and handling user interactions to enhance user engagement.
+
+Back-end: The back-end, also referred to as the server-side, handles the underlying operations that power the website's functionality and data management.
+
+Server: The server is responsible for receiving and processing requests from the front-end. It performs essential tasks such as retrieving data, processing information, and storing data securely.
+
+Application Logic: The back-end contains the application logic, which implements the business rules, data handling, and computational operations necessary for the website's functionalities and features.
+
+Database: The database is a structured repository that stores and manages the website's data. It enables efficient retrieval, creation, modification, and deletion of data based on the website's requirements and functionality.
+
+
+
+
+
+QUESTION 2) What are tags in HTML? Explain the each category of tag with an example.
+
+ANSWER: Tags in HTML are used to mark up and structure the content of a web page. They are enclosed within angle brackets (< >) and usually come in pairs: an opening tag and a closing tag. The opening tag contains the name of the tag, while the closing tag includes a forward slash (/) before the tag name. Some tags, known as empty tags, don't require a closing tag.
+
+There are different categories of tags in HTML:
+
+-- Structural Tags:
+   - <html></html>: Represents the root element of an HTML document.
+   - <head></head>: Contains meta-information about the web page, such as the title, links to stylesheets or scripts.
+   - <body></body>: Encloses the main content of the web page.
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+</head>
+<body>
+    <h1>Welcome to my website!</h1>
+    <p>This is the main content of the page.</p>
+</body>
+</html>
+
+-- Heading Tags:
+   - <h1> to <h6>: Represents different levels of headings, where the font size decreases from <h1> (largest) to <h6> (smallest)
+Example:
+<h1>Heading Level 1</h1>
+<h2>Heading Level 2</h2>
+
+-- Paragraph Tags:
+<p>: Represents a paragraph of text.
+Example:
+<p>This is a paragraph of text.</p>
+
+-- Formatting Tags:
+   - <b>: Bolds the enclosed text.
+   - <i>: Italicizes the enclosed text.
+   - <u>: Underlines the enclosed text.
+Example:
+<p>This text is <b>bold</b>, <i>italic</i>, and <u>underlined</u>.</p>
+
+-- Link Tags:
+   - `<a>`: Creates a hyperlink to another web page or resource. The `href` attribute is used to specify the destination URL.
+Example:
+<a href="https://www.example.com">Visit Example.com</a>
+
+-- Image Tags and other Media Tags (Video, iframe, etc):
+<img>: Inserts an image into the web page. It requires a `src` attribute to specify the image URL and an `alt` attribute to provide alternative text for screen readers.
+Example:
+<img src="image.jpg" alt="Description of the image">
+
+
+
+
+
+QUESTION 3) Explain the working Procedure of Virtual DOM.
+ANSWER: The Virtual DOM concept is basically like a helper that optimizes the performance of websites or web applications. It reduces the amount of work needed to update the webpage, making things faster and smoother for you as a user. By using the Virtual DOM, developers can focus on working with this blueprint version of the webpage, which simplifies their work and improves the overall experience for everyone using the website.
+
+When you first open a website or make changes to it, the Virtual DOM is created. It's a representation of the webpage's structure and content, but it's not directly visible to you. Whenever there are changes to the website, like when you click a button or update some information, a new Virtual DOM is created.
+This new Virtual DOM is compared with the previous one to figure out what content has changed.
+
+After finding out the differences, the Virtual DOM uses smart algorithms to compare the new and previous versions quickly. It looks for the smallest possible changes needed to update the webpage.
+Once the differences are identified, the Virtual DOM knows exactly which parts of the webpage need to be updated. It pinpoints the specific changes required to go from the old version to the new version.
+
+Hence, the Virtual DOM updates the actual webpage (the real DOM) accordingly. It only modifies the necessary parts of the webpage, instead of redoing everything. This helps in making the process faster and more efficient.
+These changes are viewed and can be visible after the Virtual DOM updates the real DOM, you can see the changes on your screen. The webpage reflects the updated content, like new text, images, or any other modifications that were made, etc.
+
+
+
+
+
+QUESTION 4) Mention some Differences between MySQL and No SQL
+ANSWER: Some differentiating points between MySQL and NoSQL are as follows:
+
+-- Data Structure: MySQL is a relational database management system (RDBMS), which means it organizes data into tables with predefined schemas and relationships between them. On the other hand, NoSQL (which stands for "Not Only SQL") databases are non-relational and offer flexible schemas, allowing for more dynamic and unstructured data storage.
+
+-- Scalability: MySQL databases typically follow a vertical scaling approach, where you increase the server's power (CPU, memory, etc.) to handle more data and users. NoSQL databases, on the other hand, excel in horizontal scaling, which means you can distribute data across multiple servers to handle increasing workloads and provide better performance. It uses distrubued netword systems and the concept of sharding in NoSQL.
+
+-- Query Language: MySQL uses SQL (Structured Query Language) to interact with the database. SQL provides a standardized way to query and manipulate data in relational databases. In contrast, NoSQL databases often use different query languages or APIs, depending on the specific database system being used. For example, MongoDB uses documents, B-JSON etc for handling the database.
+
+-- Flexibility: MySQL databases have a predefined schema, meaning you need to define the structure of your tables and fields before inserting data. Changing the schema can be challenging and may require altering existing data. In contrast, NoSQL databases offer schema flexibility, allowing you to add or modify fields on-the-fly without impacting existing data and can be represented in a graphical format including examples like star schema, galaxy schema etc.
+
+-- Data Consistency: MySQL enforces strict data consistency through ACID (Atomicity, Consistency, Isolation, Durability) properties, ensuring that transactions are processed reliably. NoSQL databases, particularly in their eventual consistency models, may sacrifice some level of consistency in favor of scalability and performance. This means that immediate data consistency across all nodes may not be guaranteed in NoSQL systems.
+
+-- Applications: MySQL is commonly used for applications that require complex relationships between data, such as e-commerce websites, financial systems, or content management systems. NoSQL databases excel in handling large amounts of unstructured or semi-structured data, making them suitable for applications like social media platforms, real-time analytics, etc.
+
+
+
+
+
+QUESTION 5) Explain any one DBMS Technology in your own words.
+MongoDB is a widely used database management system (DBMS) technology that belongs to the NoSQL category. It's like an extremely smart system designed to efficiently handle data. It has certain advantages and key features like:
+
+Document-Oriented: MongoDB stores data in a format known as documents. These documents are like self-contained records that hold all the information related to a specific entity or object. It's as if each document is a complete package containing all the necessary data.
+
+Flexible Schema: Unlike traditional relational databases, MongoDB doesn't enforce a rigid structure or schema upfront. You can simply store documents without the need for predefined table definitions or strict relationships among the tables. This flexibility allows for easy handling of ever-changing or evolving data requirements.
+
+B-JSON Format: MongoDB stores documents using BSON (Binary JSON), a binary representation of JSON (JavaScript Object Notation). BSON is similar to JSON but optimized for efficient data storage and retrieval. This helps in good interaction with JavaScript language.
+
+Scalability and Performance: MongoDB is a champion of horizontal scalability, which means it can handle vast amounts of data and heavy workloads by distributing data across multiple servers or nodes. It implements data sharding, a technique that divides data and stores it on different nodes, resulting in improved performance and the ability to handle high traffic on the web server.
+
+Powerful Querying: MongoDB offers a robust query language called MongoDB Query Language (MQL) and query operations, such as filtering, sorting, aggregation, and text search. The aggregation pipeline and map-reduce functionality gives MongoDB an egde over other DBMS Querying languages.
+
+High Availability: MongoDB ensures high availability and fault tolerance through features like replica sets and imaging. Replica sets consist of multiple copies of data distributed across different servers. If one server fails, another replica can seamlessly take over, providing uninterrupted access to data and minimizing downtime. This is implemented by the concept of RAID levels eg RAID-1, 5, 10, etc according to company requirements.

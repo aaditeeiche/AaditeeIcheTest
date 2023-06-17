@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <div id="calculator">
+            <form id="bmiForm">
+                <h2>Calculate Your BMI</h2>
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" step="0.01" required>
+                <br>
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" step="0.01" required>
+                <br>
+                <input type="submit" value="Calculate">
+            </form>
+            <div id="result"></div>
+        </div>
+        <div id="catagory-table">
+            <h2>BMI Categories</h2>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>BMI Range</th>
+                </tr>
+                <tr>
+                    <td>Underweight</td>
+                    <td><= 18.5</td>
+                </tr>
+                <tr>
+                    <td>Normal weight</td>
+                    <td>18.5 - 24.9</td>
+                </tr>
+                <tr>
+                    <td>Overweight</td>
+                    <td>25 - 29.9</td>
+                </tr>
+                <tr>
+                    <td>Obese</td>
+                    <td>>= 30</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
